@@ -380,14 +380,27 @@
     <p>Marketed By <a href="https://www.profitcast.com" target="_blank">Profitcast</a> — Efficient growth, delivered.</p>
   </footer>
 
-  <!-- FLOATING CONTACT BUTTONS -->
-  <div class="floating-btns">
-    <a href="tel:+919962533300" class="floating-btn floating-btn--call" aria-label="Call us">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    </a>
-    <a href="https://wa.me/919962533300" target="_blank" class="floating-btn floating-btn--whatsapp" aria-label="Chat on WhatsApp">
-      <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.129 6.744 3.047 9.379L1.054 31.25l6.1-1.953A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.32 22.598c-.39 1.1-1.932 2.013-3.172 2.28-.848.18-1.955.324-5.684-1.222-4.773-1.977-7.84-6.816-8.078-7.131-.23-.316-1.906-2.54-1.906-4.844s1.207-3.434 1.637-3.906c.43-.472.937-.59 1.25-.59.313 0 .625.003.898.016.288.014.675-.11 1.055.805.39.94 1.328 3.242 1.445 3.477.117.234.195.508.039.82-.156.316-.234.512-.469.789-.234.273-.492.61-.703.82-.234.234-.477.488-.205.957.273.469 1.215 2.004 2.61 3.246 1.793 1.598 3.304 2.094 3.773 2.328.469.234.742.195 1.016-.117s1.172-1.367 1.484-1.836c.313-.469.625-.39 1.055-.234.43.156 2.727 1.289 3.195 1.523s.781.352.898.547c.117.195.117 1.133-.273 2.227z"/></svg>
-    </a>
+  <!-- FLOATING CONTACT BUTTONS – Call left, WhatsApp right -->
+  <a href="tel:+919962533300" class="floating-btn floating-btn--call" aria-label="Call us">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="https://wa.me/919962533300" target="_blank" class="floating-btn floating-btn--whatsapp" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.129 6.744 3.047 9.379L1.054 31.25l6.1-1.953A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.32 22.598c-.39 1.1-1.932 2.013-3.172 2.28-.848.18-1.955.324-5.684-1.222-4.773-1.977-7.84-6.816-8.078-7.131-.23-.316-1.906-2.54-1.906-4.844s1.207-3.434 1.637-3.906c.43-.472.937-.59 1.25-.59.313 0 .625.003.898.016.288.014.675-.11 1.055.805.39.94 1.328 3.242 1.445 3.477.117.234.195.508.039.82-.156.316-.234.512-.469.789-.234.273-.492.61-.703.82-.234.234-.477.488-.205.957.273.469 1.215 2.004 2.61 3.246 1.793 1.598 3.304 2.094 3.773 2.328.469.234.742.195 1.016-.117s1.172-1.367 1.484-1.836c.313-.469.625-.39 1.055-.234.43.156 2.727 1.289 3.195 1.523s.781.352.898.547c.117.195.117 1.133-.273 2.227z"/></svg>
+  </a>
+
+  <!-- THANK YOU OVERLAY (hidden by default) -->
+  <div class="thankyou-overlay" id="thankyouOverlay">
+    <nav class="nav nav--thankyou">
+      <div class="nav__logo">
+        <img src="assets/Logo.png" alt="Fabloon" class="nav__logo-img" />
+      </div>
+      <a href="#contact" class="btn btn--outline-gold nav__cta">Contact Us Today</a>
+    </nav>
+    <div class="thankyou-content">
+      <h1 class="thankyou-title">Thank You for Choosing Fabloon!</h1>
+      <p class="thankyou-text">Your message has been successfully submitted.<br>The Fabloon team will get in touch with you soon.</p>
+      <button class="btn btn--gold thankyou-btn" id="thankyouBack">Back To Home</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

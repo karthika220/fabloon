@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function startStepCycle() {
-    stepTimer = setInterval(nextStep, 2500);
+    stepTimer = setInterval(nextStep, 2000);
   }
 
   stepCards.forEach((card, i) => {
@@ -217,11 +217,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ── FORM SUBMIT HANDLER ────────────────────────────── */
-  window.handleSubmit = function () {
-    const fields = document.querySelectorAll('.form-field');
-    let allFilled = true;
+  var thankyouOverlay = document.getElementById('thankyouOverlay');
+  var thankyouBack = document.getElementById('thankyouBack');
 
-    fields.forEach(f => {
+  window.handleSubmit = function () {
+    var fields = document.querySelectorAll('.form-field');
+    var allFilled = true;
+
+    fields.forEach(function (f) {
       if (f.hasAttribute('placeholder') && f.placeholder.includes('*') && !f.value.trim()) {
         f.style.borderColor = '#e05555';
         allFilled = false;
@@ -231,14 +234,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (allFilled) {
-      const btn = document.querySelector('.btn--submit');
-      btn.textContent = "Thank You! We'll be in touch.";
-      btn.style.background = '#4CAF50';
-      btn.style.color = '#fff';
-      btn.disabled = true;
-      fields.forEach(f => f.value = '');
+      fields.forEach(function (f) { f.value = ''; });
+      // Show thank you overlay
+      thankyouOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
   };
+
+  // "Back To Home" button – close overlay and scroll to top
+  thankyouBack.addEventListener('click', function () {
+    thankyouOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
 
   /* ── MARQUEE DUPLICATE (ensure seamless loop) ───────── */

@@ -264,6 +264,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: flex-start; /* Keep button at content width */
 }
 
 .steps__desc {
@@ -905,19 +906,12 @@ a {
 }
 
 /* ============================================================
-   FLOATING CONTACT BUTTONS
+   FLOATING CONTACT BUTTONS – call left, WhatsApp right
 ============================================================ */
-.floating-btns {
+.floating-btn {
   position: fixed;
   bottom: 28px;
-  right: 24px;
   z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.floating-btn {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -936,22 +930,77 @@ a {
 }
 
 .floating-btn--call {
+  left: 24px;
   background: var(--dark-green);
 }
 
 .floating-btn--whatsapp {
+  right: 24px;
   background: #25D366;
 }
 
 @media (max-width: 600px) {
-  .floating-btns {
-    bottom: 20px;
-    right: 16px;
-    gap: 12px;
-  }
-
   .floating-btn {
     width: 50px;
     height: 50px;
+    bottom: 20px;
   }
+  .floating-btn--call  { left: 16px; }
+  .floating-btn--whatsapp { right: 16px; }
+
+  /* Mobile nav: logo only, centered */
+  .nav {
+    justify-content: center;
+  }
+  .nav__cta {
+    display: none;
+  }
+}
+
+/* ============================================================
+   THANK YOU OVERLAY
+============================================================ */
+.thankyou-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: var(--white);
+  flex-direction: column;
+}
+
+.thankyou-overlay.active {
+  display: flex;
+}
+
+.thankyou-overlay .nav--thankyou {
+  position: relative;
+}
+
+.thankyou-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px var(--section-pad-x);
+  gap: 20px;
+}
+
+.thankyou-title {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.thankyou-text {
+  font-size: clamp(15px, 1.2vw, 18px);
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.thankyou-btn {
+  margin-top: 12px;
 }
