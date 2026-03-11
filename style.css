@@ -28,6 +28,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -35,6 +37,8 @@ body {
   color: var(--text-dark);
   background: var(--white);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -190,11 +194,14 @@ a {
 ============================================================ */
 .hero {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100vh;
   min-height: 560px;
   overflow: hidden;
   margin-top: var(--nav-h);
+  margin-left: 0;
+  margin-right: 0;
   background: var(--dark-green);
 }
 
@@ -868,15 +875,13 @@ a {
    RESPONSIVE – MOBILE
 ============================================================ */
 @media (max-width: 768px) {
-  /* Let the hero match a portrait mobile banner – show the full image */
   .hero {
-    height: auto;
-    min-height: unset;
-    aspect-ratio: 9 / 16;       /* typical portrait mobile banner */
+    height: calc(100vh - var(--nav-h));
+    min-height: 480px;
   }
 
   .hero__slide {
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
   }
 }
@@ -900,7 +905,7 @@ a {
   .gallery__grid { grid-template-columns: repeat(2, 1fr); }
 
   .nav { padding: 0 20px; }
-  .nav__logo-img { height: 40px; }
+  .nav__logo-img { height: 52px; }
 
   .contact__inner { padding: 32px 24px; }
 }
