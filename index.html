@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabloon – Designer Studio</title>
+  <link rel="icon" type="image/png" href="assets/Logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <img src="assets/Logo.png" alt="Fabloon" class="nav__logo-img" />
+    </div>
+    <a href="#contact" class="btn btn--outline-gold nav__cta">Contact Us Today</a>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 – HERO BANNER SLIDER
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__slide active"
+         data-desktop="assets/Section 1/Web/Banner 1.jpg"
+         data-mobile="assets/Section 1/Mobile/Banner 1.jpg"></div>
+    <div class="hero__slide"
+         data-desktop="assets/Section 1/Web/Banner 2.jpg"
+         data-mobile="assets/Section 1/Mobile/Banner 2.jpg"></div>
+    <div class="hero__slide"
+         data-desktop="assets/Section 1/Web/Banner 3.jpg"
+         data-mobile="assets/Section 1/Mobile/Banner 3.jpg"></div>
+    <!-- Slide indicators -->
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 – STEPS TO CUSTOMISE
+  ============================================================ -->
+  <section class="steps" id="steps">
+    <div class="steps__left reveal-left">
+      <h2 class="section-title">Steps To Customise</h2>
+      <p class="steps__desc">At Fabloon, nothing is off the rack. Every outfit is a journey — shaped by your story, refined through craftsmanship, and made to measure with quiet precision.</p>
+      <a href="#contact" class="btn btn--gold">Contact Us Today</a>
+    </div>
+    <div class="steps__right reveal-right">
+      <div class="step-card" data-step="1">
+        <span class="step-card__label">Book an Appointment</span>
+        <span class="step-card__arrow">→</span>
+      </div>
+      <div class="step-card" data-step="2">
+        <span class="step-card__label">Finalise Your Design</span>
+        <span class="step-card__arrow">→</span>
+      </div>
+      <div class="step-card step-card--active" data-step="3">
+        <span class="step-card__label">Confirm and Place Order</span>
+        <span class="step-card__arrow">→</span>
+      </div>
+      <div class="step-card" data-step="4">
+        <span class="step-card__label">Get It Delivered</span>
+        <span class="step-card__arrow">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 – STATEMENTS & COMMITMENTS
+  ============================================================ -->
+  <section class="commitments" id="commitments">
+    <div class="commitments__inner reveal-up">
+      <h2 class="section-title commitments__title">Statements &amp; Commitments</h2>
+      <div class="commitments__grid">
+        <div class="commit-card">
+          <h3 class="commit-card__heading">100% Custom-Made</h3>
+          <p class="commit-card__body">No standard sizes. No pre-stitched racks. Every piece is measured, cut, and created just for you.</p>
+        </div>
+        <div class="commit-card">
+          <h3 class="commit-card__heading">Hand-Aari Crafted</h3>
+          <p class="commit-card__body">Each design is hand-stitched in-house — no machine work, no shortcuts.</p>
+        </div>
+        <div class="commit-card">
+          <h3 class="commit-card__heading">Express Delivery Available</h3>
+          <p class="commit-card__body">We plan your timeline with care and deliver your outfit when promised.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4+5 – WHAT WE CAN CUSTOMISE
+  ============================================================ -->
+  <section class="services" id="services">
+    <div class="services__header reveal-up">
+      <div class="services__header-left">
+        <h2 class="section-title">What We Can Customise for You</h2>
+        <p class="services__sub">Each service is offered in-house by our expert team, ensuring consistency, detail, and a perfect fit.</p>
+      </div>
+      <a href="#contact" class="btn btn--gold">Enquire Now</a>
+    </div>
+
+    <div class="services__grid" id="servicesGrid">
+      <!-- Row 1 -->
+      <div class="service-card reveal-up">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Embroidered Blouses.jpg" alt="Embroidered Blouses" />
+        </div>
+        <h3>Embroidered Blouses</h3>
+        <p>Elegant, tailored blouses with hand-done detailing for everyday and bridal wear.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.1s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Embroidered Sarees.jpg" alt="Embroidered Sarees" />
+        </div>
+        <h3>Embroidered Sarees</h3>
+        <p>Custom work on sarees — matched to your style, silhouette, and drape.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.2s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Embroidered Waist Belts.jpg" alt="Embroidered Waist Belts" />
+        </div>
+        <h3>Embroidered Waist Belts</h3>
+        <p>Detailed waistbands that complete and elevate traditional ensembles.</p>
+      </div>
+      <!-- Row 2 -->
+      <div class="service-card reveal-up" style="--delay:0.05s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Lehenga Stitching.jpg" alt="Lehenga Stitching" />
+        </div>
+        <h3>Lehenga Stitching</h3>
+        <p>Each lehenga is built to suit your silhouette, flare, and the occasion.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.15s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Embroidered Gowns.jpg" alt="Embroidered Gowns" />
+        </div>
+        <h3>Embroidered Gowns</h3>
+        <p>Made-to-measure gowns stitched with detailing that flatters and flows.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.25s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Gown Stitching.jpg" alt="Gown Stitching" />
+        </div>
+        <h3>Gown Stitching</h3>
+        <p>Pre-pleated sarees tailored for ease without compromising elegance.</p>
+      </div>
+      <!-- Row 3 -->
+      <div class="service-card reveal-up" style="--delay:0.05s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Pattu Pavadai Stitching.jpg" alt="Pattu Pavadai Stitching" />
+        </div>
+        <h3>Pattu Pavadai Stitching</h3>
+        <p>Crafted traditional skirts for young girls with intricate detailing.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.15s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Embroidered Hair Ornaments.jpg" alt="Embroidered Hair Ornaments" />
+        </div>
+        <h3>Embroidered Hair Ornaments</h3>
+        <p>Handcrafted hair accessories that add the finishing touch to any look.</p>
+      </div>
+      <div class="service-card reveal-up" style="--delay:0.25s">
+        <div class="service-card__img-wrap">
+          <img src="assets/Section 4/Bridal Blouse Stitching.jpg" alt="Bridal Blouse Stitching" />
+        </div>
+        <h3>Bridal Blouse Stitching</h3>
+        <p>Signature bridal blouses — every stitch placed with intention and care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6+7 – GALLERY
+  ============================================================ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__header reveal-up">
+      <h2 class="section-title">See What We've Stitched — And Styled</h2>
+      <p class="gallery__sub">A glimpse into our custom work across categories — every blouse, gown, and detail you see here was made-to-measure for real women, just like you.</p>
+    </div>
+    <div class="gallery__grid" id="galleryGrid">
+      <div class="gallery-item reveal-up"><img src="assets/Section 5/Image.jpg" alt="Gallery 1" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.08s"><img src="assets/Section 5/Image-1.jpg" alt="Gallery 2" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.16s"><img src="assets/Section 5/Image-2.jpg" alt="Gallery 3" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.24s"><img src="assets/Section 5/Image-3.jpg" alt="Gallery 4" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.04s"><img src="assets/Section 5/Image-4.jpg" alt="Gallery 5" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.12s"><img src="assets/Section 5/Image-5.jpg" alt="Gallery 6" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.20s"><img src="assets/Section 5/Image-6.jpg" alt="Gallery 7" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.28s"><img src="assets/Section 5/Image-7.jpg" alt="Gallery 8" /></div>
+      <!-- Row 2 -->
+      <div class="gallery-item reveal-up"><img src="assets/Section 5/Image-8.jpg" alt="Gallery 9" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.08s"><img src="assets/Section 5/Image-9.jpg" alt="Gallery 10" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.16s"><img src="assets/Section 5/Image-10.jpg" alt="Gallery 11" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.24s"><img src="assets/Section 5/Image-11.jpg" alt="Gallery 12" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.04s"><img src="assets/Section 5/Image-12.jpg" alt="Gallery 13" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.12s"><img src="assets/Section 5/Image-13.jpg" alt="Gallery 14" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.20s"><img src="assets/Section 5/Image-14.jpg" alt="Gallery 15" /></div>
+      <div class="gallery-item reveal-up" style="--delay:0.28s"><img src="assets/Section 5/Image-15.jpg" alt="Gallery 16" /></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8 – TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__header reveal-up">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="testimonials__sub">Grateful voices from clients who turned to us for more than just stitching.</p>
+    </div>
+    <div class="testimonials__slider reveal-up">
+      <div class="testimonials__track" id="testimonialTrack">
+        <div class="testi-card">
+          <p class="testi-card__quote">"Fabloon's service is commendable. They understand your requirements and create the same product that u want in a timely manner. The fitting and designs are almost perfectly laid out. The staff (sply Julie) is very cordial and patient. I highly recommend this boutique."</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Prateek Bhatia</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"Went to this boutique after suggestions through peers and online reviews...The staff were friendly and accommodating... They worked on my blouse design as per my preference and did a great execution... I was very surprised at how well it fit me on the first go... they had a good collection of intricate works on display.... I'll be glad to go back to them...."</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Harithra Devi</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"I requested to stitch my blouse at last minute. They stitched my blouse perfectly within 1 day. The fit was ultimate and very comfortable. They really done awesome job. They ready to do any kind of work perfectly."</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Swathy Narayanaswamy</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"My first blouse stitching experience with Fabloon. With body measurements they did really really good job. Requested them to give in a week of time but they gave in three days with neat and prefect stitching. I really recommend. You got my 5/5 star service Fabloon for stitching, hospitality and everything."</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Kirthika Azhagriri</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"I really liked the blouse tailoring services. Their staff is really friendly and helpful. I ordered my service from overseas, they were very reciprocating and helpful. The blouse has come out exceptionally well and as I imagined. Thanks for the wonderful work! Julie was a wonderful staff too! I would go back to them again and again to get my blouses done!"</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Saranya Nagarajan</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"Perfect fit, accurate and prompt delivery. I have ordered two blouses for my wife. Smiling staffs. Overall nice."</p>
+          <div class="testi-card__footer">
+            <span class="testi-card__name">Satheeshkumar D.</span>
+            <span class="testi-card__stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__nav">
+        <button class="testimonials__btn testimonials__btn--prev" id="testiPrev" aria-label="Previous reviews">&#8592;</button>
+        <button class="testimonials__btn testimonials__btn--next" id="testiNext" aria-label="Next reviews">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 9 – FAQ
+  ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="faq__header reveal-up">
+      <h2 class="section-title faq__title">Frequently Asked Questions</h2>
+      <p class="faq__sub">We've answered the most common questions to help you feel confident before you walk in.</p>
+    </div>
+    <div class="faq__list reveal-up">
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Do you offer ready-made outfits?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>No. Every piece at Fabloon is made to measure, just for you.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          What's the timeline for delivery?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Timelines vary by garment, but we'll confirm it upfront during your consultation.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Are alterations done on the spot?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Minor adjustments are possible in-store, based on your fitting.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Do you offer doorstep or video call measurements?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>We currently take measurements in-studio, but virtual consults are available for outstation clients.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Can I customise every element?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Yes — from fabric and cut to embroidery, sleeves, and back design.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Will you help source the fabric?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Absolutely. We can help you select and source the material if needed.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          Is a design consultation included?
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Yes. We begin with a design discussion to understand your vision and event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 10 – MARQUEE + CONTACT FORM
+  ============================================================ -->
+  <section class="marquee-bar">
+    <div class="marquee-track">
+      <span>Crafted for Customisation&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;over 10 years&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;70+ Happy Clients &amp; Counting&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Crafted for Customisation&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;over 10 years&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;70+ Happy Clients &amp; Counting&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Crafted for Customisation&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;over 10 years&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;70+ Happy Clients &amp; Counting</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact__inner reveal-up">
+      <div class="contact__left">
+        <h2 class="contact__title">Let's Begin Your Custom Outfit at Fabloon</h2>
+        <div class="contact__details">
+          <p><a href="https://maps.google.com/?q=No.+3/5,+Venkatanarayana+Rd,+Post+Office+Colony,+Pondy+Bazaar,+T.+Nagar,+Chennai,+Tamil+Nadu+600017" target="_blank" class="contact__link">No. 3/5, Venkatanarayana Rd, Post Office Colony, Pondy Bazaar, T. Nagar, Chennai, Tamil Nadu 600017.</a></p>
+          <p><a href="tel:+919962533300" class="contact__link">+91 9962533300</a></p>
+          <p><a href="mailto:sthrifashions@gmail.com" class="contact__link">sthrifashions@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="contact__right">
+        <div class="contact__form">
+          <input type="text" placeholder="Name*" class="form-field" />
+          <input type="tel" placeholder="Phone No*" class="form-field" />
+          <input type="email" placeholder="Email" class="form-field" />
+          <input type="text" placeholder="Service*" class="form-field" />
+          <button class="btn btn--submit" onclick="handleSubmit()">Submit Your Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <p>© 2025 Fabloon – All rights reserved</p>
+    <p>Marketed By <a href="https://www.profitcast.com" target="_blank">Profitcast</a> — Efficient growth, delivered.</p>
+  </footer>
+
+  <!-- FLOATING CONTACT BUTTONS -->
+  <div class="floating-btns">
+    <a href="tel:+919962533300" class="floating-btn floating-btn--call" aria-label="Call us">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="https://wa.me/919962533300" target="_blank" class="floating-btn floating-btn--whatsapp" aria-label="Chat on WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.129 6.744 3.047 9.379L1.054 31.25l6.1-1.953A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.32 22.598c-.39 1.1-1.932 2.013-3.172 2.28-.848.18-1.955.324-5.684-1.222-4.773-1.977-7.84-6.816-8.078-7.131-.23-.316-1.906-2.54-1.906-4.844s1.207-3.434 1.637-3.906c.43-.472.937-.59 1.25-.59.313 0 .625.003.898.016.288.014.675-.11 1.055.805.39.94 1.328 3.242 1.445 3.477.117.234.195.508.039.82-.156.316-.234.512-.469.789-.234.273-.492.61-.703.82-.234.234-.477.488-.205.957.273.469 1.215 2.004 2.61 3.246 1.793 1.598 3.304 2.094 3.773 2.328.469.234.742.195 1.016-.117s1.172-1.367 1.484-1.836c.313-.469.625-.39 1.055-.234.43.156 2.727 1.289 3.195 1.523s.781.352.898.547c.117.195.117 1.133-.273 2.227z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
