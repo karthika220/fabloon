@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── HERO BANNER AUTO-SLIDER ──────────────────────────── */
   const heroSlides = document.querySelectorAll('.hero__slide');
-  const heroDots = document.querySelectorAll('.hero__dot');
   let currentSlide = 0;
   const slideInterval = 3000; // 3 seconds per slide
   let heroTimer;
@@ -45,10 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function goToSlide(index) {
     heroSlides[currentSlide].classList.remove('active');
-    heroDots[currentSlide].classList.remove('active');
     currentSlide = index;
     heroSlides[currentSlide].classList.add('active');
-    heroDots[currentSlide].classList.add('active');
   }
 
   function nextSlide() {
@@ -60,15 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function startAutoSlide() {
     heroTimer = setInterval(nextSlide, slideInterval);
   }
-
-  // Dot click navigation
-  heroDots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      clearInterval(heroTimer);
-      goToSlide(parseInt(dot.dataset.slide));
-      startAutoSlide();
-    });
-  });
 
   // Pause on hover, resume on leave
   const heroSection = document.getElementById('hero');
